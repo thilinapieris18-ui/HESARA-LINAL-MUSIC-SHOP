@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HESARA LINAL MUSIC SHOP - Elite Guitars</title>
+    <meta name="description" content="Discover ultra-premium, high-end guitars at Hesara Linal Music Shop.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons (Lucide alternative via CDN) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Particles Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>HESARA LINAL <span class="neon-text">MUSIC</span></h1>
+        </div>
+        <div class="search-container">
+            <i class="ph ph-magnifying-glass search-icon"></i>
+            <input type="text" class="search-bar" placeholder="Search elite instruments...">
+            <div class="search-glow"></div>
+        </div>
+        <nav class="nav-links">
+            <a href="#electric">Electric</a>
+            <a href="#acoustic">Acoustic</a>
+            <a href="#accessories">Accessories</a>
+        </nav>
+        <div class="header-contacts">
+            <div class="header-whatsapp">
+                <i class="ph-fill ph-whatsapp"></i>
+                <span>+94 77 667 2078</span>
+            </div>
+            <div class="header-whatsapp">
+                <i class="ph-fill ph-whatsapp"></i>
+                <span>+94 72 775 6927</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">ELEVATE YOUR <br/><span class="gradient-text">SOUND</span></h2>
+                <p class="hero-subtitle">The ultimate destination for premium, exclusive guitars. Experience luxury in every note.</p>
+                <button class="cta-button">
+                    Explore Collection
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+            
+            <div class="hero-visuals">
+                <!-- Instrument images with motion blur and floating animations -->
+                <div class="floating-instrument guitar-container">
+                    <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02?q=80&w=1000&auto=format&fit=crop" alt="Premium Electric Guitar" class="instrument guitar">
+                    <div class="motion-blur-trail mb-1"></div>
+                    <div class="motion-blur-trail mb-2"></div>
+                </div>
+                <div class="floating-instrument acoustic-container">
+                    <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?q=80&w=1000&auto=format&fit=crop" alt="Premium Acoustic Guitar" class="instrument acoustic">
+                    <div class="motion-blur-trail mb-1"></div>
+                    <div class="motion-blur-trail mb-2"></div>
+                </div>
+                <div class="ambient-glow cyan-glow"></div>
+                <div class="ambient-glow orange-glow"></div>
+            </div>
+        </section>
+
+        <!-- Product Display Section -->
+        <section class="products" id="guitars">
+            <h3 class="section-heading">Featured <span class="neon-text">Gear</span></h3>
+            
+            <div class="product-grid">
+                <!-- FIRST PRODUCT CARD: SAMICK ROCK GUITAR -->
+                <div class="product-card">
+                    <div class="product-img-container">
+                        <!-- ⚠️ DEVELOPER NOTE: Put the user's ORIGINAL guitar photo here (The actual photo taken in front of the curtain). Do NOT use AI UI generation images! -->
+                        <img src="samick-original.jpg" alt="SAMICK ROCK GUITAR" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">SAMICK ROCK GUITAR</h3>
+                        <p class="product-desc">Aggressive sharp-body glossy black electric guitar.</p>
+                        <div class="product-price-action">
+                            <span class="price-tag">LKR 40,000</span>
+                            <button class="add-to-cart-btn">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="glass-card product-card">
+                    <div class="card-glow"></div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1564186763535-ebb55ef3d128?q=80&w=800&auto=format&fit=crop" alt="Aura Acoustic">
+                    </div>
+                    <div class="product-info">
+                        <h4>Aura Acoustic Pro</h4>
+                        <p>Solid rosewood back and sides with a spruce top.</p>
+                        <div class="product-footer">
+                            <span class="price-tag">$2,199</span>
+                            <button class="icon-btn"><i class="ph ph-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 3 -->
+                <div class="glass-card product-card">
+                    <div class="card-glow"></div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1550291652-6ea9114a47b1?q=80&w=800&auto=format&fit=crop" alt="Inferno V-Model">
+                    </div>
+                    <div class="product-info">
+                        <h4>Inferno V-Model</h4>
+                        <p>Aggressive styling with dual active pickups for heavy tones.</p>
+                        <div class="product-footer">
+                            <span class="price-tag">$1,850</span>
+                            <button class="icon-btn"><i class="ph ph-shopping-cart"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
